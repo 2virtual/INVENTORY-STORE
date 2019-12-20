@@ -1,0 +1,20 @@
+[
+    
+    {
+"_id": "5dcd7741531c3808040232c6",
+"quantity":4,
+"itemName":"Bread",
+"issuedBy":"olami",
+"collectedBy":"olami",
+"department":"Security"
+},
+{
+    "_id":"5dcd778a531c3808040232c7",
+    "quantity":4,
+    "itemName":"Egg",
+    "issuedBy":"olami",
+    "collectedBy":"olami",
+    "department":"Security"
+    }
+    
+]

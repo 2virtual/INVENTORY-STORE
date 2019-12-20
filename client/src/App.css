@@ -1,0 +1,585 @@
+.remove-btn{
+  margin-right : 0.5rem;
+  }
+  
+  .fade-enter {
+  
+  opacity: 0.01;
+  }
+  
+  .fade-enter-active {
+  
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+  }
+  
+  .fade-exit {
+  opacity: 1;
+      
+  }
+  
+  .fade-exit-active{
+  opacity: 0.01;
+  transition: opacity 1000ms ease-out;
+      
+  }
+
+  .field {
+      width: 100%;
+      height: 56px;
+      border-radius: 4px;
+      position: relative;
+      background-color: rgba(255,255,255,0.3);
+      transition: 0.3s all;
+    }
+    .field:hover {
+      background-color: rgba(255, 255, 255, 0.45);
+      box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+    }
+
+    .purchase-card{
+      width: 100px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      padding: 1em
+  }
+  .jumb-o{
+    padding: 70px 30x 70px 30x;
+    background-color:"purple";
+    color: "purple";
+    margin:0;
+  }
+
+  .iframe-size{
+
+    width: 60%;
+  }
+
+  .jumbotron
+  {   
+      padding-top: 0px;
+      padding-bottom:0px; 
+      background-image:url('images/Onsite3.jpg');
+      background-size: 500px;
+      background: contain;
+      width: 40%; /* make sure to define width to fill container */
+      height: 100px; /* define the height in pixels or make sure   */
+                     /* you have something in your div with height */
+                     /* so you can see your image */
+      max-width:1400px;  /* define the max width */
+   }
+
+   .log-image{
+     padding: 2rem;
+    background-image:url('images/Onsite3.jpg');
+   }
+ 
+
+.App {
+margin: 0;
+padding: 0;
+font-family: "Raleway", sans-serif;
+}
+.App-header {
+background-color: white;
+height: 20px;
+padding: 2px 4px 4px 2px;
+color: white;
+display:inline-block;
+
+align-items: center;
+}
+
+  .Detail-container{
+    display: flex;
+    width: 100%;
+    flex: 1;
+    /* overflow: scroll; */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  
+  .Detail-card{
+    display: flex;
+    width: 90%;
+    /* flex: 1; */
+    background-color: white;
+    flex-direction: column;
+    margin-top: 8px;
+    padding: 8px;
+    border: 1px solid lightgray;
+    box-shadow: 0px 5px 5px -2px gray; 
+  }
+  
+  .Detail-card-separator {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  .Detail-card-row{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 4px;
+  }
+  .Detail-card-row-content{
+    width: 100%;
+    flex: 1;
+  }
+  .font-small{
+    font-size: 12px;
+  }
+  .fill-width {
+    align-self: stretch;
+  }
+  .align-flex-end{
+    align-items: flex-end;
+  }
+  .align-center{
+    align-items: center;
+    text-align: center;
+  }
+  .justify-flex-end{
+    justify-content: flex-end;
+  }
+  .justify-center{
+    justify-content: center;
+  }
+  .align-stretch{
+    align-items: stretch;
+  }
+  
+  .Detail-card-col{
+    display: flex;
+    flex: 1;
+    /* align-items: center; */
+    flex-direction: column;
+  }
+  
+  @media only screen and (min-width: 600px) {  
+    .container {
+      padding: 4px 8px 4px 8px;
+    }
+    .content {
+      padding: 8px 8px 8px 8px;
+    }
+    .heading {
+      font-size: 32px;
+    }
+    .form, .Detail-card {
+      width: 60%;
+    }
+  }
+
+  .btn {
+    border: none;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    text-align: center;
+    padding: 4px 8px 4px 8px;
+    margin: 0 2px 0 2px;
+    background: #444;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s;
+  }
+  
+  .btn:hover {
+    filter: brightness(120%);
+    transform: translate(0, -2px);
+    box-shadow: 0px 4px 3px -2px gray;
+  }
+  .disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    background: #CCC;
+  }
+  
+  .btn-info {
+    background: #0077ff;
+    color: white;
+  }
+  
+  .btn-danger {
+    /* background: #ee2222; */
+    background: #FF3C3C;
+    color: white;
+  }
+  
+  .btn-warning {
+    background: #ddaa00;
+    color: white;
+  }
+  
+  .btn-success {
+    background: #44aa33;
+    color: white;
+  }
+  
+  @media only screen and (min-width: 600px) {  
+    .btn {
+      font-size: 16px;
+    }
+  }
+
+  .input {
+    display: inline-block;
+    padding: 4px 8px 4px 8px;
+    margin: 0 2px 0 2px;
+    font-family: 'Raleway', sans-serif;
+    transition: .3s;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+  
+  .flex {
+    display: flex;
+    flex: 1;
+  }
+  .heading {
+    font-size: 24px;
+  }
+  .text-align-center{
+    text-align: center;
+  }
+  .text-align-right{
+    text-align: right;
+  }
+  .justify-flex-end{
+    justify-content: flex-end;
+  }
+  .justify-space-between{
+    justify-content: space-between;
+  }
+  .Login-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* text-align: center; */
+    width: 100%;
+    font-size: 14px;
+    /* margin-top: 17vh; */
+    /* height: 77vh; */
+  }
+  
+  .Login-card{
+    display: flex;
+    width: 90%;
+    /* flex: 1; */
+    background-color: white;
+    flex-direction: column;
+    margin-bottom: 8px;
+    padding: 8px;
+    border: 1px solid lightgray;
+    box-shadow: 0px 5px 5px -2px gray; 
+    /* flex-wrap: wrap; */
+  }
+  .Login-card-list{
+    padding-left: 20px;
+  }
+  .Login-card-separator {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  .Login-card-row{
+    display: flex;
+    /* flex: 1; */
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: flex-start; */
+    padding-bottom: 4px;
+  }
+  .show-border{
+    border: 1px solid black;
+  }
+  .Login-card-col{
+    display: flex;
+    flex: 1;
+    /* align-items: center; */
+    flex-direction: column;
+  }
+  
+  .align-self-flex-start {
+    align-self: flex-start;
+  }
+  @media only screen and (min-width: 600px) {  
+    .container {
+      padding: 4px 8px 4px 8px;
+    }
+    .content {
+      padding: 8px 8px 8px 8px;
+    }
+    .heading {
+      font-size: 32px;
+    }
+    .Login-card {
+      width: 60%;
+    }
+  }  
+
+
+  .heading {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .content {
+    display: flex;
+  }
+  @media only screen and (min-width: 600px) {  
+    .container {
+      padding: 4px 8px 4px 8px;
+    }
+    .content {
+      padding: 8px 8px 8px 8px;
+    }
+    .heading {
+      font-size: 32px;
+    }
+  }
+
+
+  
+
+  .App-nav {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 36px;
+  }
+  
+  .App-nav-item{
+    padding: 8px;
+    background-color: #333;
+    flex: 1;
+    align-self: stretch;
+    text-align: center;
+  }
+  .App-nav-item a{
+    display: inline-block;
+    width: 100%;
+    color: white !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  .App-nav-item.active{
+    filter: brightness(140%);
+  }
+  .App-nav-item:hover{
+    filter: brightness(140%);
+  }
+  
+  .App-content {
+    position: relative;
+    padding: 4px;
+    margin-top: 44px;
+    bottom: 44px;
+  }
+  .App-intro {
+    font-size: large;
+  }
+  
+  .register-user{
+     font-size: 14px;
+  letter-spacing: 1.9px;
+  font-weight: 100;
+  margin: 0.5em 0.5em 0.5em 1.7em;
+  padding: 16px 1.5em;
+  color: white;
+  background-color: #e50914;
+  cursor: pointer;
+  text-decoration: none;
+  vertical-align: middle;
+  font-family: Arial, sans-serif;
+  border-radius: 2px;
+  user-select: none;
+  text-align: center;
+  border: 0;
+
+ 
+  }
+  
+  /* App.js */
+
+  @import url('https://fonts.googleapis.com/css?family=Raleway');
+* {
+transition: .2s ease;
+font-family: "Raleway", sans-serif !important;
+}
+a {
+color: #111;
+font-weight: 700;
+}
+.input {
+background-color: inherit;
+}
+body {
+margin: 0;
+padding: 0;
+font-family: "Raleway", sans-serif;
+/* overflow: scroll; */
+background-color: #fcfcfc;
+}
+/* table, .form, .Detail-card, .Login-card {
+background-color: #333 !important;
+border-color: #222 !important;
+box-shadow: 0 0 5px -2px black !important;
+color: #eee;
+} */
+
+.bg-info {
+background: #0077ff;
+color: white;
+}
+
+.bg-danger {
+background: #FF3C3C;
+color: white;
+}
+
+.bg-warning {
+background: #ddaa00;
+color: white;
+}
+
+.bg-success {
+background: #44aa33;
+color: white;
+}
+
+/* App.css*/
+
+.img-woman{
+margin-top: 2.5em;
+}
+.img-woman{ 
+opacity: 1; 
+} 
+
+
+.container{
+
+  margin-top: 10px;
+}
+
+.display-card{
+  width: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  padding: 1em
+}
+
+.purchase-card > .show-grid{
+
+  padding-bottom : 1.5em;
+}
+
+
+.root {
+height: 100vh;
+width: 100%;
+position:fixed; 
+top:0;
+left:0; 
+background-color: rgba(0,0,0,.5);
+z-index:10;
+}
+
+.modal{
+min-height: 300px; 
+background-color: white;
+border: 1px solid #999; 
+border-radius: 3px; 
+position: relative; 
+top: 50px; 
+max-width: 600px; 
+width: 90%; 
+left: 50%; 
+margin-left: -300px; 
+padding: 30px; 
+}
+
+.input {
+  width: 100%; 
+  margin: 5px 0; 
+  padding: 3px 10px;
+  border-radius: 3px; 
+  border: none;
+  font-size: 1.6rem; 
+  line-height: 2.4rem;
+  color: #555;
+  font-weight: 400; 
+  background-color: #d3d3d3;
+  box-shadow: none; 
+}
+
+.label {
+  padding: 5px 0 0 0;
+  display: block; 
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+}
+
+  .span{
+    display: block; 
+  }
+
+
+
+.selectButton{
+  display: inline-block;
+  width:  48%; 
+  margin: 5px 1%; 
+  padding: 3px 10px;
+  border-radius: 3px; 
+  border:none; 
+  position:relative; 
+}
+
+.selectButton_active{
+  background-color: orange;
+  color: white; 
+  
+
+
+}
+
+
+.closeModal{
+background-color: #d3d3d3;
+position: absolute; 
+top: -10px; 
+right: -10px;
+height: 30px;
+width: 30px; 
+border-radius: 50%; 
+border: none;
+}
+
+.addNewStockItemButton{
+padding: 5px 10px;
+max-width: 250px; 
+width: 90%;
+display: block;
+margin: 15px auto;
+font-size: 1.8rem; 
+line-height: 2.4rem; 
+background-color: #444;
+color: white; 
+border:none; 
+border-radius: 3px; 
+}
+
